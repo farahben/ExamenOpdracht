@@ -1,0 +1,41 @@
+.tablink {
+  background-color: black;
+  color: white;
+  float: left;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  width: 25%;
+  padding: 12px 24px;
+}
+
+.tablink:hover {
+  background-color: #f44336;
+}
+
+.tabcontent {
+  background-color: white;
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#pannenkoeken {
+  background-color: white;
+}
+#brusselsewafels {
+  background-color: white;
+}
+#smoothies {
+  background-color: white;
+}
+#warmedranken {
+  background-color: white;
+}
+#menu-title > h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 64px;
+  font-weight: 400;
+}

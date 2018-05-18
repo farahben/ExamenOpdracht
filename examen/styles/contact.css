@@ -1,0 +1,64 @@
+#contact {
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:  "map map map"
+                       ". title ."
+                       ". text ."
+                       ". input .";
+  filter: grayscale(50%);
+}
+#googleMap {
+  grid-area: map;
+}
+#contact-title {
+  grid-area: title;
+}
+#contact-text {
+  grid-area: text;
+}
+#contact-input {
+  grid-area: input;
+}
+#googleMap {
+  max-width: 100%;
+  height: 400px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#contact {
+  background-color: #607d8b;
+}
+#contact-title > h1 {
+  font-weight: 400;
+  font-size: 64px;
+  text-align:center;
+}
+#contact-text > p {
+  font-size: 24px;
+}
+#contact-text > p > span {
+  font-size: 36px;
+}
+.w3-border-0 {
+  width: 100%;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 8px;
+}
+.w3-select {
+  width: 100%;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 8px;
+}
+.w3-button  {
+  width: 100%;
+  font-size: 24px;
+  padding: 8px 16px;
+  margin-bottom: 50px;
+}

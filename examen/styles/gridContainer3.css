@@ -1,0 +1,14 @@
+#gridContainer3 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "topnav"
+                       "about";
+                      
+}
+#myTopnav{
+  grid-area: topnav;
+}
+#about {
+  grid-area: about;
+}

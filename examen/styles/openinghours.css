@@ -1,0 +1,30 @@
+#openinghours {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "title ."
+                       "opsom1 opsom2";
+}
+#openinghours-title {
+  grid-area: title;
+}
+#openinghours-list1 {
+  grid-area: opsom1;
+}
+#openinghours-list2 {
+  grid-area: opsom2;
+}
+#openinghours-list1 > ul {
+  list-style-type: none;
+}
+#openinghours-list2 > ul {
+  list-style-type: none;
+}
+#openinghours-list1 > ul > li {
+  padding: 12px;
+  font-size: 24px;
+}
+#openinghours-list2 > ul > li {
+  padding: 12px;
+  font-size: 24px;
+}

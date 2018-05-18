@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/topnav.css">
+    <link rel="stylesheet" type="text/css" href="styles/menu.css">
+    <link rel="stylesheet" type="text/css" href="styles/gridContainer2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic SC">
+
+    <style>
+    </style>
+  </head>
+  <body>
+    <div id="gridContainer2">
+      <div id="myTopnav" class="topnav">
+        <a href="index.php" class="active">HOME</a>
+        <a href="menu.php">MENU</a>
+        <a href="about.php">ABOUT</a>
+        <a href="contact.php">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+      </script>
+      <div id="menu-title">
+        <h1>
+          THE MENU
+        </h1>
+      </div>
+      <div id="menu-tabs">
+        <button class="tablink" onclick="openPage('pannenkoeken', this, '#f44336')" id="defaultOpen">PANNENKOEKEN</button>
+        <button class="tablink" onclick="openPage('brusselsewafels', this, '#f44336')">BRUSSELSE WAFELS</button>
+        <button class="tablink" onclick="openPage('smoothies', this, '#f44336')">SMOOTHIES</button>
+        <button class="tablink" onclick="openPage('warmedranken', this, '#f44336')">WARME DRANKEN</button>
+        <div id="pannenkoeken" class="tabcontent">
+          <h3>PANNENKOEKEN</h3>
+        </div>
+        <div id="brusselsewafels" class="tabcontent">
+          <h3>BRUSSELSE WAFELS</h3>
+          <p>Some news this fine day!</p> 
+        </div>
+        <div id="smoothies" class="tabcontent">
+          <h3>SMOOTHIES</h3>
+        </div>
+        <div id="warmedranken" class="tabcontent">
+          <h3>WARME DRANKEN</h3>
+        </div>
+     </div>
+     <script>
+        function openPage(pageName, elmnt, color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        document.getElementById("defaultOpen").click();
+     </script>
+      
+    </div>
+  </body>
+</html>

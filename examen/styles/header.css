@@ -1,0 +1,23 @@
+#header-img > img {
+  width: 100%;
+  position: relative;
+}
+.centered {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered > a {
+  display: block;
+  background-color: black;
+  padding: 12px 16px;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+.centered > a:hover {
+  background-color: #ccc;
+  color: black;
+  opacity: 10;
+}

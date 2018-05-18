@@ -1,0 +1,13 @@
+#gridContainer4 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "topnav"
+                       "contact";
+}
+#myTopnav {
+  grid-area: topnav;
+}
+#contact {
+  grid-area: contact;
+}
