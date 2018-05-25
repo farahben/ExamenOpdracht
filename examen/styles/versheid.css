@@ -29,8 +29,8 @@
   font-size: 24px;
   line-height: 1.5;
 }
-#versheid-video > video {
-   width: 100%;
-   height: auto;
+#versheid-video > video { 
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 50px;
 }
-

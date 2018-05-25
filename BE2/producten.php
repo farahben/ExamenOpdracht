@@ -1,3 +1,8 @@
+<?php
+
+include_once("database.php");
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -53,71 +58,31 @@
 					</ul>
 				</div>
 				<div id="products">
+          
+<?php
+for ($i = 0; $i < count($products); ++$i)
+{
+  $productItem = $products[$i];
+?>
+          
 					<div class = "ProductItem">
-						<a href="#">
+						<a href="product.php?id=<?= $i; ?>">
 						<h1>
-							Bert
+<?= $productItem["title"]; ?>
 						</h1>
 						<div>
-							<img src="images/be.jpeg" alt="Bert">
+							<img src="images/<?= $productItem["image"]; ?>" alt="Bert">
 							<p>
-								Dit is Bert
+<?= $productItem["text"]; ?>
 							</p>
 						</div>
 						</a>
 					</div>
-					<div class = "ProductItem">
-						<a href="#">
-						<h1>
-							Bert
-						</h1>
-						<div>
-							<img src="images/be.jpeg" alt="Bert">
-							<p>
-								Dit is Bert
-							</p>
-						</div>
-						</a>
-					</div>
-					<div class = "ProductItem">
-						<a href="#">
-						<h1>
-							Bert
-						</h1>
-						<div>
-							<img src="images/be.jpeg" alt="Bert">
-							<p>
-								Dit is Bert
-							</p>
-						</div>
-						</a>
-					</div>
-					<div class = "ProductItem">
-						<a href="#">
-						<h1>
-							Bert
-						</h1>
-						<div>
-							<img src="images/be.jpeg" alt="Bert">
-							<p>
-								Dit is Bert
-							</p>
-						</div>
-						</a>
-					</div>
-					<div class = "ProductItem">
-						<a href="#">
-						<h1>
-							Bert
-						</h1>
-						<div>
-							<img src="images/be.jpeg" alt="Bert">
-							<p>
-								Dit is Bert
-							</p>
-						</div>
-						</a>
-					</div>
+<?php
+}
+?>
+          
+          
 				</div>
 			</div>
 		</div>

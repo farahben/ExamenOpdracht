@@ -1,0 +1,28 @@
+#gridContainer5 {
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  grid-template-rows: auto auto;
+  grid-template-areas: "topnav topnav topnav"
+                       ". content .";
+  background-color: #f44336;
+  filter: grayscale(75%);
+}
+#myTopnav {
+  grid-area: topnav;
+}
+#content {
+  grid-area: content;
+}
+#content > h1 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 400;
+  margin-top: 60px;
+}
+#content > h2{
+  font-size: 36px;
+}
+#content > p { 
+  font-size: 24px;
+  line-height: 1.5;
+}

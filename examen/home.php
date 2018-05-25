@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>
+      Home
+    </title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <link rel="stylesheet" type="text/css" href="styles/topnav.css">
     <link rel="stylesheet" type="text/css" href="styles/menu.css">
     <link rel="stylesheet" type="text/css" href="styles/header.css">
@@ -16,7 +20,7 @@
   <body>
     <div id="gridContainer1">
       <div id="myTopnav" class="topnav">
-        <a href="index.php" class="active">HOME</a>
+        <a href="home.php" class="active">HOME</a>
         <a href="menu.php">MENU</a>
         <a href="about.php">ABOUT</a>
         <a href="contact.php">CONTACT</a>
@@ -59,6 +63,11 @@
              <source src="images/movie.mp4" type="video/mp4">
           </video>
         </div>
+      </div>
+      <div id="footer">
+        <p>
+          The Crepe Room
+        </p>
       </div>
     </div>
   </body>

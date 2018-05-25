@@ -1,10 +1,11 @@
 #gridContainer2 {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas: "topnav topnav topnav"
                        ". title ."
-                       ". tabs .";
+                       ". tabs ."
+                       "footer footer footer";
 }
 #myTopnav{
     grid-area: topnav;
@@ -14,4 +15,7 @@
 }
 #menu-tabs{
   grid-area: tabs;
+}
+#footer {
+  grid-area: footer;
 }
