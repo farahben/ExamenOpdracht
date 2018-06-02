@@ -1,0 +1,43 @@
+#gridContainer2 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "topnav"
+                       "title"
+                       "tabs"
+                       "footer";
+}
+#myTopnav{
+    grid-area: topnav;
+}
+#menu-title {
+  grid-area: title;
+}
+#menu-tabs{
+  grid-area: tabs;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+#footer {
+  grid-area: footer;
+}
+@media only screen and ( min-width: 900px )
+{
+	#gridContainer2 {
+	  grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "topnav topnav topnav"
+                       ". title ."
+                       ". tabs ."
+                       "footer footer footer";
+	}
+  #menu-tabs {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .tablink {
+  font-size: 26px;
+  padding: 12px 24px;
+  width: 25%;
+}
+}

@@ -1,0 +1,9 @@
+#footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  font-size: 36px;
+  margin-top: 80px;
+}
+#footer > p {
+  text-align: center;
+}

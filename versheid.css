@@ -1,0 +1,58 @@
+#versheid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "title"
+                       "text"
+                       "vid";
+  background-color: #f44336;
+  filter: grayscale(75%);
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+#versheid-title {
+  grid-area: title;
+}
+#versheid-text {
+  grid-area: text;
+}
+#versheid-video {
+  grid-area: vid;
+}
+#versheid-text > p > img {
+  width: 150px;
+  border-radius: 50%;
+  display: inline-block;
+  float: right;
+}
+#versheid-title > h1 {
+  font-weight: 400;
+  margin-bottom: 64px;
+  font-size: 64px;
+  text-align: center;
+}
+#versheid-text > p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+#versheid-video > iframe { 
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  filter: grayscale(100%);
+}
+
+@media only screen and ( min-width: 900px )
+{
+	#versheid {
+		grid-template-columns: 200px auto 200px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: ". title ."
+                       ". text ."
+                       ". vid .";
+    padding-left: 0px;
+    padding-right: 0px;
+	}
+}

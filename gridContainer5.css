@@ -1,0 +1,51 @@
+#gridContainer5 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "topnav"
+                       "content";
+  background-color: #f44336;
+  filter: grayscale(75%);
+  padding-right: 15px;
+  padding-left: 15px;
+}
+#myTopnav {
+  grid-area: topnav;
+}
+#content {
+  grid-area: content;
+}
+#content > img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+#content > p > span > img {
+  border-radius: 50%;
+  display: inline-block;
+  float: right;
+  width: 120px;
+}
+#content > h1 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 400;
+  margin-top: 60px;
+}
+#content > h2{
+  font-size: 36px;
+}
+#content > p { 
+  font-size: 24px;
+  line-height: 1.5;
+}
+@media only screen and ( min-width: 900px )
+{
+	#gridContainer5 {
+	  grid-template-columns: 200px auto 200px;
+    grid-template-rows: auto auto;
+    grid-template-areas: "topnav topnav topnav"
+                         ". content .";
+    padding-left: 0px;
+    padding-right: 0px;
+	}
+}

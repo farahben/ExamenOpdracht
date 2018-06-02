@@ -1,0 +1,39 @@
+#openinghours {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "title ."
+                       "opsom1 opsom2"
+                       "note note";
+  padding-bottom: 64px;
+}
+#openinghours-title {
+  grid-area: title;
+}
+#openinghours-list1 {
+  grid-area: opsom1;
+}
+#openinghours-list2 {
+  grid-area: opsom2;
+}
+#note {
+  grid-area: note;
+  background-color: black;
+  border-left: 6px solid white;
+  font-size: 24px;
+  padding: 5px;
+}
+#openinghours-list1 > ul {
+  list-style-type: none;
+}
+#openinghours-list2 > ul {
+  list-style-type: none;
+}
+#openinghours-list1 > ul > li {
+  padding: 13px;
+  font-size: 24px;
+}
+#openinghours-list2 > ul > li {
+  padding: 13px;
+  font-size: 24px;
+}
